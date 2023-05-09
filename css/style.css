@@ -1,0 +1,103 @@
+* {
+ font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+}
+img {
+ width: 100%;
+ height: auto;
+ max-width: 700px;
+}
+body {
+ margin: 0 auto;
+ text-align: left;
+}
+a:hover {
+ text-decoration: underline;
+}
+.all {
+ width: 100%;
+ margin: 0 auto;
+ overflow: hidden;
+}
+#tabContents {
+ font-size: 15px;
+ background-color: #FFF;
+ margin-top: 50px;
+}
+h2 {
+ font-size: 30px;
+ font-weight: bold;
+ border-left: solid 5px #000;
+ padding-top: 0.7%;
+ padding-left: 2%;
+ margin-bottom: 2%;
+}
+.tab_page {
+ width: 700px;
+ margin: 0 auto;
+ padding-top: 2%;
+}
+.tab_text {
+ margin-bottom: 5%;
+ font-size: 13px;
+ line-height: 20px;
+}
+.accordion_btn {
+ width: 100%;
+ background-color: #000;
+ color: #fff;
+ padding: 1% 2%;
+ border-bottom: 1px solid #fff;
+}
+.accordion_btn::before {
+ content: "＋";
+}
+.accordion_btn.active::before {
+ content: "－";
+}
+.accordion_contents {
+ display: none;
+ margin-bottom: 2vw;
+}
+#memo_tribe table {
+ width: 100%;
+ font-size: 13px;
+}
+#memo_tribe table th {
+ background-color: #000;
+ color: #fff;
+ width: 15%;
+}
+#memo_tribe table th, #memo_tribe table td {
+ padding: 1%;
+ vertical-align: middle;
+}
+#memo_tribe table, #memo_tribe table tr {
+ border-collapse: collapse;
+ border: solid 1px #C0C0C0;
+}
+#memo_tribe pre {
+ white-space: break-spaces;
+ margin: 2vw 0;
+}
+#memo_tribe details pre{
+ margin:0;
+}
+@media screen and (max-width: 699px) {
+ #tabContents {
+  margin-top: 15%;
+ }
+ #memo_tribe table {
+  width: 100%;
+  font-size: 11px;
+ }
+ .tab_page {
+  width: 95%;
+ }
+ .tab_text {
+  font-size: 12px;
+  line-height: 20px;
+ }
+ .accordion_btn {
+  width: 100%;
+ }
+}
